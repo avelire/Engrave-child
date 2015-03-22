@@ -54,6 +54,10 @@ get_header(); ?>
 					</div>
 				<?php endif; ?>
 			<?php endif; ?>
+
+			<?php get_sidebar('archive'); ?>
+
+			
 							
 			<?php if( have_posts() ): ?>
 
@@ -98,5 +102,6 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'none' ); ?>		
 
 			<?php endif; wp_reset_query(); ?>
+
 
 <?php get_footer() ?>
